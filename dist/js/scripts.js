@@ -1,3 +1,4 @@
+//libraries like jquery etc
 /** Form Validation */
 const btn = document.querySelector('.btn');
 const btnInput = document.querySelector('input[type=submit]');

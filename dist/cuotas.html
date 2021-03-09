@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plannet - Portal de Pago</title>
+    <meta name="author" content="Global3">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+
+    <!-- Header -->
+    <header class="py-4 px-2 bg-plannet-purple-dark mb-12">
+        <div class="container lg:max-w-6xl mx-auto flex justify-between items-center">
+            <div class="logo">
+                <a href="#"><img src="./img/logo_plannet.png" alt="Logo Plannet" width="200"></a>
+            </div>
+            <div class="flex">
+                <div class="account flex items-end">
+                    <img src="./img/avatar.svg" alt="Avatar" width="30">
+                    <p class="text-white mb-0 ml-3 leading-4">Hola, <span class="uppercase">Rodrigo Castillo</span></p>
+                </div>
+                <button class="bg-plannet-green hover:bg-plannet-green-dark text-white py-1 px-5 ml-5 transition-all">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content-->
+    <main class="container relative md:max-w-6xl mx-auto mb-12">
+        <div class="w-full flex items-center justify-between">
+            <h1 class="text-2xl text-gray-400">Cuota(s) a pagar</h1>
+            <div class="text-plannet-purple">Último pago: 09/02/2021</div>
+        </div>
+
+        <!-- Listado Cuotas Pendientes -->
+        <div class="w-full mt-8">
+            
+            <div class="bg-white overflow-auto">
+                <table class="min-w-full leading-normal">
+                    <thead>
+                        <tr>
+                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Plan
+                            </th>
+                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Fecha Cuota
+                            </th>
+                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Monto
+                            </th>
+                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Estado
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="font-serif">
+                        <tr>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Fibra 20 Simetrico
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                    $19.990
+                                </p>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <button class="rounded-2xl py-1 px-3 bg-green-100 text-green-900">Pagado</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Fibra 20 Simetrico
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                    $19.990
+                                </p>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <button class="rounded-2xl py-1 px-3 bg-red-100 text-red-900 hover:bg-red-900 hover:text-red-100 transition-all">Pagar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Fibra 20 Simetrico
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">
+                                    $19.990
+                                </p>
+                            </td>
+                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                <button class="rounded-2xl py-1 px-3 bg-green-100 text-green-900">Pagado</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-5 py-5 bg-white text-sm">
+                                <div class="flex items-center">
+                                    <div class="flex-shrink-0 w-10 h-10">
+                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                                    </div>
+                                    <div class="ml-3">
+                                        <p class="text-gray-900 whitespace-no-wrap">
+                                            Fibra 20 Simetrico
+                                        </p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="px-5 py-5 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
+                            </td>
+                            <td class="px-5 py-5 bg-white text-sm">
+                                <p class="text-gray-900 whitespace-no-wrap">$19.990</p>
+                            </td>
+                            <td class="px-5 py-5 bg-white text-sm">
+                                <button class="rounded-2xl py-1 px-3 bg-green-100 text-green-900">Pagado</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="border-t-2 border-gray-100 mt-5 py-8 flex justify-center">
+                    <button class="rounded-2xl py-1 px-3 bg-red-100 text-red-900 hover:bg-red-900 hover:text-red-100 transition-all">Pagar Todo</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Sin Cuotas Pendientes -->
+        <div class="w-full bg-gray-100 p-16 flex flex-col items-center">
+            <img src="./img/sindeudas.svg" width="150" height="150">
+            <h3 class="text-plannet-green text-3xl my-7">No tienes cuotas pendientes</h3>
+            <div class="text-plannet-purple">Último pago: 09/02/2021</div>
+        </div>
+
+    </main>
+
+    <!-- Whatsapp -->
+    <a href="https://api.whatsapp.com/send/?phone=56936954627&text&app_absent=0" class="absolute bottom-16 left-0 bg-plannet-green-dark py-3 px-5 flex items-center rounded-tr-md rounded-br-md">
+        <img src="./img/whatsapp.svg" width="30" height="30">
+        <span class="text-white text-lg ml-3">Fono Whatsapp +56936954627</span>
+    </a>
+
+    <!-- Main Scripts -->
+    <script src="./js/scripts.js"></script>
+
+</body>
+</html>

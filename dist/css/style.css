@@ -188139,6 +188139,8 @@ video {
   }
 }
 
+@charset "UTF-8";
+
 *:focus {
   outline: none;
 }
@@ -188235,4 +188237,10 @@ video {
   to {
     transform: rotate(360deg);
   }
+}
+
+/** Botón Whtasapp */
+
+.btn-wtsp {
+  box-shadow: 0 13px 16px -12px rgba(18, 58, 46, 0.5);
 }

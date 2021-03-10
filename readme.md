@@ -1,26 +1,28 @@
-# Gulp with TailwindCSS Starter Kit
+# Plannet Login & Cuotas
 
-Gulp with TailwindCSS Starter Kit - A repo which makes your development easier with predefined gulp tasks that help you to use [tailwindcss](https://github.com/tailwindcss/tailwindcss) with simple npm commands 
+Vistas HTML para Plannet - Login y Cuotas
 
-## Usage
+## Como usar
 
-1. Install Dev Depedencies
+Para hacer el uso de gul para la compilación de estilos y minificación de los mismo y tambien los js seguir los siguientes pasos
+
+1. Instalar Dependencias de Desarrollo (Dev Dependencies)
 ```sh
 npm install
 ```
-2. To start development and server for live preview
+2. Para inciar el servidor y comenzar el desarrollo
 ```sh
 npm run dev
 ```
-3. To generate minifed files for production server
+3. Para generar los archivos minificados y pasar a servidor de producción
 ```sh
 npm run prod 
 ```
 
-# Configuration
+# Configuración de rutas
 
 
-To change the path of files and destination/build folder, edit options in **config.js** file
+Para cambiar la ruta de los archivos y sus destinos editar el **config.js**
 ```sh
 {
   config: {
@@ -51,4 +53,3 @@ To change the path of files and destination/build folder, edit options in **conf
   ...
 }
 ```
-# Plannet Login & Cuotas

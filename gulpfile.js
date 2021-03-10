@@ -36,7 +36,6 @@ function livePreview(done){
     server: {
       baseDir: options.paths.dist.base
     },
-    //proxy: 'plannetlogin.local/',
     port: options.config.port || 5000
   });
   done();

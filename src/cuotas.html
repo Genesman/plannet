@@ -14,13 +14,13 @@
 
     <!-- Header -->
     <header class="py-4 px-2 bg-plannet-purple-dark mb-12">
-        <div class="container lg:max-w-6xl mx-auto flex justify-between items-center">
-            <div class="logo">
-                <a href="#"><img src="./img/logo_plannet.png" alt="Logo Plannet" width="200"></a>
+        <div class="container lg:max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center px-4 sm:px-0">
+            <div class="logo mb-5 sm:mb-0">
+                <a href="#"><img src="./img/logo_plannet.png" alt="Logo Plannet"  width="200" height="60"></a>
             </div>
-            <div class="flex">
+            <div class="flex justify-between w-full sm:w-auto">
                 <div class="account flex items-end">
-                    <img src="./img/avatar.svg" alt="Avatar" width="30">
+                    <img src="./img/avatar.svg" alt="Avatar" width="30" height="30">
                     <p class="text-white mb-0 ml-3 leading-4">Hola, <span class="uppercase">Rodrigo Castillo</span></p>
                 </div>
                 <button class="bg-plannet-green hover:bg-plannet-green-dark text-white py-1 px-5 ml-5 transition-all">Salir</button>
@@ -29,9 +29,10 @@
     </header>
 
     <!-- Main Content-->
-    <main class="container relative md:max-w-6xl mx-auto mb-12">
-        <div class="w-full flex items-center justify-between">
-            <h1 class="text-2xl text-gray-400">Cuota(s) a pagar</h1>
+    <main class="container relative lg:max-w-6xl mx-auto mb-12 px-4 sm:px-0">
+        
+        <div class="w-full flex flex-col sm:items-center justify-between sm:flex-row">
+            <h1 class="text-2xl text-gray-400 mb-3 sm:mb-0">Cuota(s) a pagar</h1>
             <div class="text-plannet-purple">Último pago: 09/02/2021</div>
         </div>
 
@@ -39,119 +40,161 @@
         <div class="w-full mt-8">
             
             <div class="bg-white overflow-auto">
-                <table class="min-w-full leading-normal">
+                <table class="w-full flex flex-row flex-no-wrap sm:bg-white overflow-hidden my-5">
                     <thead>
-                        <tr>
-                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
                                 Plan
                             </th>
-                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
                                 Fecha Cuota
                             </th>
-                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
                                 Monto
                             </th>
-                            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Estado
+                            </th>
+                        </tr>
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Plan
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Fecha Cuota
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Monto
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Estado
+                            </th>
+                        </tr>
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Plan
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Fecha Cuota
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Monto
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Estado
+                            </th>
+                        </tr>
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Plan
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Fecha Cuota
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
+                                Monto
+                            </th>
+                            <th class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-serif text-gray-800 uppercase tracking-wider">
                                 Estado
                             </th>
                         </tr>
                     </thead>
-                    <tbody class="font-serif">
-                        <tr>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                <div class="flex items-center">
-                                    <div class="flex-shrink-0 w-10 h-10">
-                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                    <tbody class="font-serif flex-1 sm:flex-none">
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
+                                <div class="sm:flex sm:items-center">
+                                    <div class="hidden sm:block flex-shrink-0">
+                                        <img class="w-5 sm:w-8" src="./img/internet-plan.svg" width="30" height="30">
                                     </div>
-                                    <div class="ml-3">
+                                    <div class="sm:ml-3">
                                         <p class="text-gray-900 whitespace-no-wrap">
                                             Fibra 20 Simetrico
                                         </p>
                                     </div>
                                 </div>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">
                                     $19.990
                                 </p>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <button class="rounded-2xl py-1 px-3 bg-green-100 text-green-900">Pagado</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                <div class="flex items-center">
-                                    <div class="flex-shrink-0 w-10 h-10">
-                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
+                                <div class="sm:flex sm:items-center">
+                                    <div class="hidden sm:block flex-shrink-0">
+                                        <img class="w-5 sm:w-8" src="./img/internet-plan.svg" width="30" height="30">
                                     </div>
-                                    <div class="ml-3">
+                                    <div class="sm:ml-3">
                                         <p class="text-gray-900 whitespace-no-wrap">
                                             Fibra 20 Simetrico
                                         </p>
                                     </div>
                                 </div>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">
                                     $19.990
                                 </p>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <button class="rounded-2xl py-1 px-3 bg-red-100 text-red-900 hover:bg-red-900 hover:text-red-100 transition-all">Pagar</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                <div class="flex items-center">
-                                    <div class="flex-shrink-0 w-10 h-10">
-                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
+                                <div class="sm:flex sm:items-center">
+                                    <div class="hidden sm:block flex-shrink-0">
+                                        <img class="w-5 sm:w-8" src="./img/internet-plan.svg" width="30" height="30">
                                     </div>
-                                    <div class="ml-3">
+                                    <div class="sm:ml-3">
                                         <p class="text-gray-900 whitespace-no-wrap">
                                             Fibra 20 Simetrico
                                         </p>
                                     </div>
                                 </div>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">
                                     $19.990
                                 </p>
                             </td>
-                            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <button class="rounded-2xl py-1 px-3 bg-green-100 text-green-900">Pagado</button>
                             </td>
                         </tr>
-                        <tr>
-                            <td class="px-5 py-5 bg-white text-sm">
-                                <div class="flex items-center">
-                                    <div class="flex-shrink-0 w-10 h-10">
-                                        <img class="w-full h-full" src="./img/internet-plan.svg" width="30" height="30">
+                        <tr class="flex flex-col flex-nowrap sm:table-row mb-5 sm:mb-0">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
+                                <div class="sm:flex sm:items-center">
+                                    <div class="hidden sm:block flex-shrink-0">
+                                        <img class="w-5 sm:w-8" src="./img/internet-plan.svg" width="30" height="30">
                                     </div>
-                                    <div class="ml-3">
+                                    <div class="sm:ml-3">
                                         <p class="text-gray-900 whitespace-no-wrap">
                                             Fibra 20 Simetrico
                                         </p>
                                     </div>
                                 </div>
                             </td>
-                            <td class="px-5 py-5 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">09/03/2021</p>
                             </td>
-                            <td class="px-5 py-5 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <p class="text-gray-900 whitespace-no-wrap">$19.990</p>
                             </td>
-                            <td class="px-5 py-5 bg-white text-sm">
+                            <td class="h-11 sm:h-auto px-3 sm:p-3 flex items-center sm:table-cell border-b border-gray-200 bg-white text-sm">
                                 <button class="rounded-2xl py-1 px-3 bg-green-100 text-green-900">Pagado</button>
                             </td>
                         </tr>
@@ -176,7 +219,7 @@
     </main>
 
     <!-- Whatsapp -->
-    <a href="https://api.whatsapp.com/send/?phone=56936954627&text&app_absent=0" class="btn-wtsp absolute bottom-8 left-8 bg-plannet-green-dark py-2 px-5 flex items-center rounded-full" target="_blank">
+    <a href="https://api.whatsapp.com/send/?phone=56936954627&text&app_absent=0" class="btn-wtsp fixed bottom-8 left-8 bg-plannet-green-dark py-2 px-5 flex items-center rounded-full" target="_blank" rel="noopener">
         <img src="./img/whatsapp.svg" width="25" height="25">
         <span class="text-white text-lg ml-3">Contáctanos</span>
     </a>

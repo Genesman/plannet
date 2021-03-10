@@ -6,11 +6,11 @@ const submit = document.getElementById('submit');
 const alerta = document.getElementById("alerta");
 const mensaje = document.getElementById("mensaje");
 
-submit.addEventListener('click', () => {
+/*submit.addEventListener('click', () => {
     btn.classList.add('submit');
     btnInput.value = "";
     spinner.classList.add('show');
-})
+})*/
 
 // Permitir sólo números en el imput
 function isNumber(evt) {

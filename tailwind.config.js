@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'plannet-log': "url(/img/plannetlog_bg.jpg)",
-        'plannet-welcome': "url(/img/welcome-section.jpg)"
+        'plannet-welcome': "url(/img/welcome-section.jpg)",
+        'plannet-login-mob': "url(/img/bg-login-mobile.png)"
       }),
       colors: {
         'plannet-green': '#3cb573',

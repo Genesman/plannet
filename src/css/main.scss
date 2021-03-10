@@ -61,6 +61,17 @@
     }
 }
 
+/** Responsive Table */
+@media (min-width: 640px) {
+    table {
+        display: inline-table !important;
+    }
+
+    thead tr:not(:first-child) {
+        display: none;
+    }
+}
+
 /** Botón Whtasapp */
 .btn-wtsp {
     box-shadow: 0 13px 16px -12px rgba(18, 58, 46, .5);

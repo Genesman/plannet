@@ -2,6 +2,7 @@
 /** Form Validation */
 const btn = document.querySelector('.btn');
 const btnInput = document.querySelector('input[type=submit]');
+const spinner = document.querySelector('.loading');
 const submit = document.getElementById('submit');
 const alerta = document.getElementById("alerta");
 const mensaje = document.getElementById("mensaje");
@@ -9,6 +10,7 @@ const mensaje = document.getElementById("mensaje");
 submit.addEventListener('click', () => {
     btn.classList.add('submit');
     btnInput.value = "";
+    spinner.classList.add('show');
 })
 
 // Permitir sólo números en el imput

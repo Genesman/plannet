@@ -188170,6 +188170,25 @@ video {
           animation-delay: 0.2s;
 }
 
+.btn .loading {
+  left: 50%;
+  top: -1rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  transform-origin: center;
+  -webkit-animation: spinner 1.5s infinite linear;
+          animation: spinner 1.5s infinite linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn .loading.show {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+}
+
 @-webkit-keyframes loading {
   0% {
     width: 0%;
@@ -188195,5 +188214,25 @@ video {
 
   100% {
     width: 100%;
+  }
+}
+
+@-webkit-keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
